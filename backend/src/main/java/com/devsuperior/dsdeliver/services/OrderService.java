@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.jaxb.SpringDataJaxb.OrderDto;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -41,6 +42,14 @@ public class OrderService {
 		}
 		order = repository.save(order); // salva o produto no banco
 		return new OrderDTO(order); //retona obj convertido 
+	}
+	//@Transaction = alteração banco de dado
+	@Transactional  //PUT entregador informa o pedido entregue . 
+	public OrderDTO setDelivered(Long id) {
+		Order order = repository.getOne(id);
+		order.setStatus(OrderStatus.DELIVERED); //pedido entregue
+		order= repository.save(order);//save
+		return new OrderDTO(order);
 	}
 
 }

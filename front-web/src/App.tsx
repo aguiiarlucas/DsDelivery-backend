@@ -1,15 +1,13 @@
 import './App.css';
+import Home from './Home';
 import Navbar from './Navbar';
  
- 
- 
-
-function App() {
+function App() {/*Arquivo principal da navegação*/
   return (
-    <div>
+    <> 
      <Navbar/>
-
-  </div>
+    <Home/> 
+  </>
   );
 }
 

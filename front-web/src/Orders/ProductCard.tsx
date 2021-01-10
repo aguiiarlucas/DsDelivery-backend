@@ -1,4 +1,3 @@
-import StepsHeader from './StepsHeader'
 import './styles.css'
 import { Product } from './types'
 

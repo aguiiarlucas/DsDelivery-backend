@@ -3,14 +3,14 @@ Sistema de registro e entrega de pedidos. As interfaces de usuário foram constr
 
 https://github.com/aguiiarlucas/dsdelivered-sds2
 
-Back-end/ Front-end
+## Back-end/ Front-end
 
-Node.js
-React
-React Native
-Sprint Boot
-PostgreSQL
-Java
-TypeScript
-CSS
-HTML
+* Node.js
+* React
+* React Native
+* Sprint Boot
+* PostgreSQL
+* Java
+* TypeScript
+* CSS
+* HTML
